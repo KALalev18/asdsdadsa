@@ -60,7 +60,7 @@
             width: 130px;
         }
         nav a:nth-child(4):hover~.animation{
-            width: 125px;
+            width: 120px;
             left: 325px;
         }
         nav a:nth-child(5){
@@ -75,6 +75,30 @@
 
         * {
             box-sizing: border-box;
+        }
+
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #e26d5c;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            box-shadow: 0.25rem 0.25rem 0rem black;
+        }
+
+        input {
+            margin: 0 0.5rem 0 0.5rem;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #e26d5c;
+            color: white;
+        }
+
+        ::placeholder {
+            color: #f0b2a8;
         }
 
         /* Style the body */
@@ -189,21 +213,49 @@
                 width: 70%;
             }
             .search-container button {
-                width: 50%;
+                width: 30%;
                 margin-left: 0;
             }
         }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="header">
     <h1>Заедно към развитието на спорта</h1>
-    <div class="search-container" style="float: right;">
-        <form action="#">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <div class="input-wrapper">
+        <div class="fa fa-search"></div>
+        <input type="text" placeholder="Search" />
+        <div class="fa fa-times"></div>
     </div>
 </div>
 
@@ -220,6 +272,7 @@
 <br>
 <img src="https://www.pomorie.bg/new/wp-content/uploads/2021/11/DSCN1331-scaled-1440x480.jpg" width="600" height="200">
 <p style="float: right;">Новоизграденото спортно съоръжение в Поморие радва малчуганите и очарова възрастните.</p>
+<p>20/02/2023</p>
 <br>
 <br>
 
@@ -227,14 +280,14 @@
 <br>
 <img src="http://dynamicsport.eu/uploads/3/4/3/5/34357036/329484_orig.jpg" width="500" height="300">
 <p style="float: right;">15 млн. лв. ще бъдат вложeни до края на настоящата година за изграждане и оборудване на нови спортни площадки в училищата и за ремонт на стари съоръжения. Това предвижда проект на Решение на Министерския съвет за одобряване на Програма за изграждане на нови и ремонт на съществуващи спортни площадки в държавните и общинските училища. Документът е публикуван за обществено обсъждане.</p>
+<p>18/12/2022</p>
 <br>
 <br>
 
 <h2>Ротари клуб подари спортни съоръжения на врачани</h2>
 <br>
 <img src="https://darik.bg/media/551/296102437_1683298102039438_1463777287411480632_n.l.webp" width="400" height="250">
-<p style="float: right; margin-left: 100px;">Четири шахматни маси и четири тенис маси бяха дарени на Община Враца от Ротари клуб Враца.
-
-    Новите спортни съоръжения, които са разположени в парка при стадион „Христо Ботев“ бяха открити от заместник-кмета Цветан Стойчков и президента на Ротари клуб Враца Валентина Ангелова.</p>
+<p style="float: right;">Четири шахматни маси и четири тенис маси бяха дарени на Община Враца от Ротари клуб Враца. Новите спортни съоръжения, които са разположени в парка при стадион „Христо Ботев“ бяха открити от заместник-кмета Цветан Стойчков и президента на Ротари клуб Враца Валентина Ангелова.</p>
+<p>18/08/2022</p>
 </body>
 </html>
