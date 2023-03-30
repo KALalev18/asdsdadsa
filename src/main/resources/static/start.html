@@ -11,9 +11,8 @@
     }
 
     .wrapper .sidebar{
-      width: 200px;
-      height: 100%;
-      padding: 30px 0px;
+      width: 190px;
+      padding: 30px;
       position: fixed;
       border: 2px solid black;
       padding: 10px;
@@ -97,6 +96,34 @@
       box-sizing: border-box;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #e26d5c;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      color: white;
+      box-shadow: 0.25rem 0.25rem 0rem black;
+    }
+
+    input {
+      margin: 0 0.5rem 0 0.5rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #e26d5c;
+      color: white;
+    }
+
+    ::placeholder {
+      color: #f0b2a8;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
@@ -154,7 +181,7 @@
       background-color: #f1f1f1;
       padding: 10px;
     }
-     @media screen and (max-width: 700px) {
+    @media screen and (max-width: 700px) {
       .row {
         flex-direction: column;
       }
@@ -375,6 +402,12 @@
 
 <div class="header">
   <h1>Sports</h1>
+  <div class="input-wrapper">
+    <div class="fa fa-search"></div>
+    <input type="text" placeholder="Search"/>
+    <div class="fa fa-times"></div>
+  </div>
+  <br>
 </div>
 
 <nav>
@@ -389,19 +422,19 @@
   <div class="side">
     <div class="wrapper">
       <div class="sidebar">
-        <h2>Sidebar</h2>
+        <h2>Услуги</h2>
         <ul>
-          <li><a href="#"><i class="fas fa-home"></i>Снимки</a></li>
-          <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-          <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
-          <li><a href="#"><i class="fas fa-project-diagram"></i>Portfolio</a></li>
-          <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
-          <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
-          <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
+          <li><a href="football.html">Футболни игрища</a></li>
+          <li><a href="tennis.html">Тенис кортове</a></li>
+          <li><a href="lights.html">Осветление</a></li>
+          <li><a href="flooring.html">Настилка</a></li>
+          <li><a href="seats.html">Седалки и трибуни</a></li>
+          <li><a href="schools.html">За училища</a></li>
+          <li><a href="fields.html">Съоръжение</a></li>
         </ul>
       </div>
       <div class="main_content">
-        <div class="header">Welcome!! Have a nice day.</div>
+        <div class="header">Welcome! Have a nice day.</div>
         <div class="info">
           <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
           <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
